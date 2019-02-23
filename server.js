@@ -6,5 +6,6 @@ const server = app.listen(3000, () => {
 app.get('/', (req, res) => {
   res.render('index', {title:'Homepage'});
 });
+//commit test
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
