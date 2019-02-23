@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   </head>
 
+  <div>
+    <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+           <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/about">About us<span class="sr-only">(current)</span></a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
+  </nav>
+  </div>
   <div id="like_button_container"></div>
   <body>
   <div id="particles-js"></div>
@@ -14,6 +24,7 @@
   <script type="text/javascript" src="app.js"></script>
 	  <!-- ... other HTML ... -->
 
+    
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
