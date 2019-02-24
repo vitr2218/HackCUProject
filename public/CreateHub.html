@@ -1,0 +1,71 @@
+<DOCTYPE html>
+        <html>
+          <head>
+            <title>HackCU: Project</title>
+            <meta charset="UTF-8">
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+          </head>
+        
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+          </div>
+        
+          <div>
+            <nav class="navbar navbar-inverse" role="navigation" style="padding-left:230px;">
+                   <ul class="nav navbar-nav">
+                  <li><a href="CreateHub.html">CreateHub<span class="sr-only">(current)</span></a></li>
+                  <li class="active"><a href="about.html">About </a></li>
+                  <li><a href="contact.html">Collaborations</a></li>
+                  <li><a href="contact.html">Marketplace</a></li>
+                  <li><a href="contact.html">Jobs</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+          </nav>
+          </div>
+        
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Profile</a>
+            <a href="#">Projects</a>
+            <a href="#">Connections</a>
+            <a href="#">Settings</a>
+          </div>
+          
+          <div id="like_button_container"></div>
+          <body>
+          <div id="particles-js"></div>
+        
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+              document.body.style.backgroundColor = "white";
+            }
+            </script>
+        
+          <script type="text/javascript" src="particles.js"></script>
+          <script type="text/javascript" src="app.js"></script>
+              <!-- ... other HTML ... -->
+        
+            
+          <!-- Load React. -->
+          <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+          <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+          <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        
+        
+          </body>
+        
+        </html>
+        
