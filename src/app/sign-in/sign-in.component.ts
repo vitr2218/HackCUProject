@@ -15,11 +15,11 @@ export class SignInComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    console.log(firebase.auth().currentUser)
   }
 
   public signIn() {
-    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE).then(() => {
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
       return firebase.auth().signInWithEmailAndPassword(this.email, this.password)
         .then((user) => {
           $('#myModal').modal('toggle');
