@@ -1,0 +1,26 @@
+.sign-in {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #267DDD;
+    color: white;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5;
+    height: 40px;
+    padding: 0px 23px;
+    border-radius: 25px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
