@@ -1,2 +1,39 @@
-<p>
-</p>
+<a *ngIf="!user" class="typeform-share button" href="https://developerplatform.typeform.com/to/ujbFTK" data-mode="popup"
+  style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;
+     cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:40px;
+     text-align:center;margin:5;height:40px;padding:0px 23px;border-radius:25px;max-width:100%;
+     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;
+     -moz-osx-font-smoothing:grayscale;" target="_blank">Sign Up</a>
+<script> (function () {
+    var qs, js, q, s, d = document,
+      gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) }
+  })() </script>
+
+<!-- Trigger the modal with a button -->
+<a *ngIf="!user" type="button" class="sign-in" data-toggle="modal" data-target="#myModal">Sign In</a>
+
+<a *ngIf="user" type="button" class="sign-in" (click)="signOut()">Sign Out {{ user.displayName }}</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <input class="form-control" [(ngModel)]="email" type="email" placeholder="Email address" />
+        <br>
+        <input class="form-control" [(ngModel)]="password" type="password" placeholder="Password" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button (click)="signIn()" type="button" class="btn btn-default">Sign In</button>
+      </div>
+    </div>
+
+  </div>
+</div>
