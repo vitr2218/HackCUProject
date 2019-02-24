@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"lol, tests\"",
     "hosting": "firebase serve --only hosting",
-    "functions": "firebase serve --only functions",
-    "ngrok": "ngrok start 5000",
+    "functions": "cd functions && concurrently --kill-others \"nodemon --exec \"firebase\" serve --only functions\"",
+    "ngrok": "ngrok http 5000",
     "deploy": "firebase deploy"
   },
   "repository": {
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/vitr2218/HackCUProject#readme",
   "devDependencies": {
+    "concurrently": "^4.1.0",
+    "firebase-functions": "^2.2.0",
     "firebase-tools": "^6.4.0",
-    "ngrok": "^3.1.1"
+    "ngrok": "^3.1.1",
+    "nodemon": "^1.18.10"
   }
 }
