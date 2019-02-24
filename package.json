@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "functions": "cd functions && concurrently --kill-others \"nodemon --exec \"firebase\" serve --only functions\"",
     "ngrok": "ngrok http 5000",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "getAngular": "npm i -g @angular/cli"
   },
   "repository": {
     "type": "git",
