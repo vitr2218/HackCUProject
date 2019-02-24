@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
   
 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
@@ -18,13 +18,18 @@
     <title>HackCU: Project</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   </head>
-
+  <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+  
   <div>
-    <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+    
+    <nav class="navbar navbar-inverse" role="navigation" style="padding-left:230px;">
            <ul class="nav navbar-nav">
+<<<<<<< HEAD
           <li class="active"><a href="index.html">Home</a></li>
           <li class="active"><a href="about.html">About us<span class="sr-only">(current)</span></a></li>
           <li class= "active"><a href="contact.html">Contact us</a></li>
@@ -36,12 +41,45 @@
             white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;
             -moz-osx-font-smoothing:grayscale;" target="_blank">Sign Up</a><script> (function() { var qs,js,q,s,d=document,
             gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+=======
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us<span class="sr-only">(current)</span></a></li>
+          <li><a href="contact.html">Collaborations</a></li>
+          <li><a href="contact.html">Marketplace</a></li>
+          <li><a href="contact.html">Jobs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          
+>>>>>>> af9a4111ebbc28cbc88c1639b9247403651f78d7
         </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
   </nav>
   </div>
-  <div id="like_button_container"></div>
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Profile</a>
+      <a href="#">Projects</a>
+      <a href="#">Connections</a>
+      <a href="#">Settings</a>
+    </div>
   <body>
-  <div id="particles-js"></div>
+  <div id="particles-js"><div class="something">
+      <h1> something here </h1>
+     </div></div>
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
   <script type="text/javascript" src="particles.js"></script>
   <script type="text/javascript" src="app.js"></script>
 	  <!-- ... other HTML ... -->

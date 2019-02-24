@@ -1,19 +1,53 @@
 <html>
 <head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
+<div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </div>
+      <div>
+    
+            <nav class="navbar navbar-inverse" role="navigation" style="padding-left:230px;">
+                   <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About us<span class="sr-only">(current)</span></a></li>
+                  <li><a href="contact.html">Collaborations</a></li>
+                  <li><a href="contact.html">Marketplace</a></li>
+                  <li><a href="contact.html">Jobs</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+          </nav>
+          </div>
+          <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Profile</a>
+                <a href="#">Projects</a>
+                <a href="#">Connections</a>
+                <a href="#">Settings</a>
+              </div>
 <body>
+        <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                  document.body.style.backgroundColor = "white";
+                }
+                </script>
   <div>
-  <div>
-  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-         <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about">About us</a></li>
-        <li class="active"><a href="contact.html">Contact us<span class="sr-only">(current)</span></a></li>
-      </ul>
-</nav>
-</div>
+        
   <br/>
   <form class="form-horizontal" role="form" style="width: 50%;">
     <div class="form-group">
