@@ -41,6 +41,20 @@ app.post('/webhook', (req, res) => {
         res.send({succees: 'NO'})
     });
 });
+
+// firebase.auth().signInWithEmailAndPassword(email, )
+//    .then(function(firebaseUser) {
+//        // Success 
+//    })
+//   .catch(function(error) {
+//        // Error Handling
+// });
+  
+//   // Signs-out of Friendly Chat.
+//   function signOut() {
+//     // Sign out of Firebase.
+//     firebase.auth().signOut();
+//   }
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
