@@ -7,7 +7,8 @@
     "hosting": "firebase serve --only hosting",
     "functions": "cd functions && concurrently --kill-others \"nodemon --exec \"firebase\" serve --only functions\"",
     "ngrok": "ngrok http 5000",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "postinstall": "cd functions && npm i"
   },
   "repository": {
     "type": "git",
