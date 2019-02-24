@@ -7,7 +7,5 @@ Project for HackCU 2019
 1. Clone repo
 2. Run these commands:
 - `npm install`
-- `npm i firebase`
-- `npm run functions`
 
 
