@@ -94,6 +94,9 @@
      background-position: 50% 50%;
      background-repeat: no-repeat;
    }
+   .something {
+    z-index:1;
+   }
    
    helloworld
    {
